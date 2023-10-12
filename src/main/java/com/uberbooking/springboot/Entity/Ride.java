@@ -36,15 +36,14 @@ public class Ride {
     private int estimatedTime;
     private int numberOfTyres;
 
-    private boolean hasRide;
 
 
 
-    public Ride(long id, double distanceToTravel, int estimatedTime, int numberOfTyres, boolean hasRide) {
+
+    public Ride(long id, double distanceToTravel, int estimatedTime, int numberOfTyres) {
         this.id = id;
         this.distanceToTravel = distanceToTravel;
         this.estimatedTime = estimatedTime;
         this.numberOfTyres = numberOfTyres;
-        this.hasRide=hasRide;
     }
 }
