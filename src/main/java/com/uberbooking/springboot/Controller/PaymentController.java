@@ -17,10 +17,9 @@ public class PaymentController {
 
 
     @RequestMapping("/session")
-    public Payment createSession(@RequestParam(required = false) String paymentMod) {
+    public Payment createSession(@RequestParam(required = false, name="paymentMod") String paymentMod) {
         if (paymentMod == null) {
             paymentMod = "None";
-            return service.createSession(paymentMod);
         }
         return service.createSession(paymentMod);
     }
